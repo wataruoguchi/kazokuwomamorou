@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { tipsData } from './situation/tips-data';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +11,5 @@ export class AppComponent {
 
   faCaretRight = faCaretRight;
 
-  situations = ['situation 1', 'situation 2', 'situation 3', 'situation 4', 'situation 5'];
+  situations = tipsData;
 }

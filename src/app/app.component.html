@@ -1,6 +1,6 @@
 <div class="p-grid p-justify-center">
   <div class="p-lg-5 p-md-6 p-sm-8 p-col-12">
-    <div class="p-grid p-dir-col" style="background-color: aqua">
+    <div class="p-grid p-dir-col" style="background-color: #fff4c9">
       <div class="p-col p-grid p-justify-center"><img src="../assets/main_background.png" class="main-bg-image"></div>
       <div class="p-col">
         <p>私たちは遠く離れて暮らしているあなたを心配しています。気をつけるだけでなく、具体的に何をすべきか私たちの経験を元にまとめました。</p>
@@ -15,17 +15,20 @@
       <div class="p-col">
         <h4>目次</h4>
         <div class="agenda-list">
-          <div><fa-icon [icon]="faCaretRight"></fa-icon>買い物に行く</div>
-          <div><fa-icon [icon]="faCaretRight"></fa-icon>高齢の家族に会う</div>
-          <div><fa-icon [icon]="faCaretRight"></fa-icon>ストレスを抱える前に</div>
-          <div><fa-icon [icon]="faCaretRight"></fa-icon>仕事に行く</div>
-          <div><fa-icon [icon]="faCaretRight"></fa-icon>車・電車を使う</div>
+          <div *ngFor="let situation of situations"><fa-icon [icon]="faCaretRight"></fa-icon><a href="#{{ situation.id }}">{{ situation.header }}</a></div>
         </div>
       </div>
       <div class="p-col p-grid p-justify-center"><img src="../assets/divider.png" class="divider"></div>
-      <div class="p-col">
-        <app-situation *ngFor="let situation of situations"></app-situation>
+      <div class="p-col" *ngFor="let situation of situations">
+        <app-situation [situationBlock]=situation></app-situation>
+        <div class="p-col p-grid p-justify-center"><img src="../assets/divider.png" class="divider"></div>
       </div>
+      <div class="p-col">最後に</div>
+      <div class="p-col p-grid p-justify-center"><img src="../assets/divider.png" class="divider"></div>
+      <div class="p-col">目次へ戻る</div>
+      <div class="p-col">問い合わせ</div>
+      <div class="p-col">この記事をシェアする</div>
+      <div class="p-col">©2020 Make 2020 Better</div>
     </div>
   </div>
 </div>

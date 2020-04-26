@@ -1,1 +1,13 @@
-<p>situation works!</p>
+<h3 [id]="id">{{ header }}</h3>
+<div *ngFor="let tip of tips; index as i">
+  <img src="{{ tip.imageSource }}">
+  <h4>{{ i + 1 }}. {{ tip.summary }}</h4>
+  <div>{{ tip.description }}</div>
+</div>
+<div>
+  <h5>参考情報</h5>
+  <div *ngFor="let ref of references">
+    <div>{{ ref.title }}</div>
+    <a [href]="ref.url">{{ ref.url }}</a>
+  </div>
+</div>
