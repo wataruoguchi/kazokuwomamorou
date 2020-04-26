@@ -1,52 +1,55 @@
-<div class="p-grid p-justify-center">
-  <div class="p-xl-6 p-md-8 p-sm-10 p-col-12">
-    <div class="p-grid p-dir-col content-container" style="background-color: #fff4c9">
-
-      <div class="p-col p-col-align-center top-copy">
-        <img src="../assets/main_background.png">
-        <div class="p-col p-col-align-center copy-container">
-          <div class="main-phrase full-justify">家族を守ろう</div>
-          <div class="sub-phrase">自分と大切な人を守るために、</div>
-          <div class="sub-phrase">今できること。</div>
-        </div>
+<div class="p-grid p-justify-center content-container">
+  <div class="p-xl-6 p-md-8 p-sm-10 p-col-12 p-grid p-dir-col" style="background-color: #fff4c9">
+    <div class="p-col p-col-align-center top-copy">
+      <img src="../assets/main_background.png">
+      <div class="p-col p-col-align-center copy-container">
+        <div class="main-phrase full-justify">家族を守ろう</div>
+        <div class="sub-phrase">自分と大切な人を守るために、</div>
+        <div class="sub-phrase">今できること。</div>
       </div>
+    </div>
 
-      <div class="p-col">
-        <div>私たちは遠く離れて暮らしているあなたを心配しています。気をつけるだけでなく、具体的に何をすべきか私たちの経験を元にまとめました。</div>
-        <div>「やりすぎくらい」でもいいです。</div>
-        <div>また笑顔でみんなに会えることを願って、このサイトをあなたに届けます。</div>
+    <div class="p-col">
+      <div>私たちは遠く離れて暮らしているあなたを心配しています。気をつけるだけでなく、具体的に何をすべきか私たちの経験を元にまとめました。</div>
+      <div>「やりすぎくらい」でもいいです。</div>
+      <div>また笑顔でみんなに会えることを願って、このサイトをあなたに届けます。</div>
+    </div>
+
+    <div class="p-col p-grid p-justify-center"><img src="../assets/bird.png" class="bird-image"></div>
+
+    <div class="p-col">
+      <div>外出するとき、仕事に行くとき、人と会うとき。シチュエーションに合わせたコロナウイルスの予防をまとめましたので、普段の行動を振り返りながらチェックしてください。</div>
+    </div>
+
+    <div class="p-col p-grid p-justify-center"><img src="../assets/divider.png" class="divider"></div>
+
+    <div id="agenda" class="p-col agenda">
+      <div>目次</div>
+      <div class="agenda-list">
+        <ng-container *ngFor="let situation of situations; last as isLast">
+          <div *ngIf="!isLast">
+            <fa-icon [icon]="faCaretRight"></fa-icon><a href="#{{ situation.id }}">{{ situation.header }}</a>
+          </div>
+        </ng-container>
       </div>
+    </div>
 
-      <div class="p-col p-grid p-justify-center"><img src="../assets/bird.png" class="bird-image"></div>
+    <div class="p-col p-grid p-justify-center"><img src="../assets/divider.png" class="divider"></div>
 
-      <div class="p-col">
-        <div>外出するとき、仕事に行くとき、人と会うとき。シチュエーションに合わせたコロナウイルスの予防をまとめましたので、普段の行動を振り返りながらチェックしてください。</div>
-      </div>
-
+    <div class="p-col" *ngFor="let situation of situations">
+      <app-situation [situationBlock]=situation></app-situation>
       <div class="p-col p-grid p-justify-center"><img src="../assets/divider.png" class="divider"></div>
+    </div>
 
-      <div class="p-col agenda">
-        <div>目次</div>
-        <div class="agenda-list">
-          <ng-container *ngFor="let situation of situations; last as isLast">
-            <div *ngIf="!isLast">
-              <fa-icon [icon]="faCaretRight"></fa-icon><a href="#{{ situation.id }}">{{ situation.header }}</a>
-            </div>
-          </ng-container>
-        </div>
-      </div>
+    <div class="p-col p-col-align-center"><a href="#agenda">目次へ戻る</a></div>
 
-      <div class="p-col p-grid p-justify-center"><img src="../assets/divider.png" class="divider"></div>
-
-      <div class="p-col" *ngFor="let situation of situations">
-        <app-situation [situationBlock]=situation></app-situation>
-        <div class="p-col p-grid p-justify-center"><img src="../assets/divider.png" class="divider"></div>
-      </div>
-
-      <div class="p-col">目次へ戻る</div>
-      <div class="p-col">問い合わせ</div>
-      <div class="p-col">この記事をシェアする</div>
-      <div class="p-col">©2020 Make 2020 Better</div>
+    <div class="p-col contact">
+      <div class="tip-summary">問い合わせ</div>
+      <div>本記事についてのご意見やご指摘などは、<a href="#">[Google Form]</a>よりお問い合わせください。</div>
     </div>
   </div>
+</div>
+<div>
+  <div class="p-col">この記事をシェアする</div>
+  <div class="p-col">©2020 Make 2020 Better</div>
 </div>
