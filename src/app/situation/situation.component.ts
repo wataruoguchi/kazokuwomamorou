@@ -10,6 +10,7 @@ export class SituationComponent implements OnInit {
   header: string;
   tips: tip[];
   references: reference[];
+  hasMultipleTips: boolean;
 
   @Input()
   public set situationBlock(situationBlock: situation) {
@@ -17,6 +18,7 @@ export class SituationComponent implements OnInit {
     this.header = situationBlock.header;
     this.tips = situationBlock.tips;
     this.references = situationBlock.references;
+    this.hasMultipleTips = situationBlock.tips.length > 1;
   }
 
   constructor() {

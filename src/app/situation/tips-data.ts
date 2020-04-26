@@ -187,4 +187,21 @@ export const tipsData: situation[] = [
       }
     ]
   },
+  {
+    id: 'situation-sick',
+    header: '最後に',
+    tips: [
+      {
+        imageSource: '../../assets/tips-image/when-you-feel-sick.png',
+        summary: '体調に異変を感じたら、まず連絡を',
+        description: '新型コロナウイルスに対応した地域の医療機関の連絡先は事前に調べ、見えるところに控えておきましょう。熱や咳、または呼吸が難しいと感じたら、まずは電話で相談しましょう。新型コロナウイルスの感染が「いつ」「どこで発生したのか」という情報は、地域を守る大事な情報となります。'
+      },
+    ],
+    references: [
+      {
+        title: 'Coronavirus disease (COVID-19) advice for the public',
+        url: 'https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public'
+      },
+    ]
+  },
 ];
