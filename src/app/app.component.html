@@ -10,17 +10,17 @@
         </div>
       </div>
       <div class="p-col">
-        <p>私たちは遠く離れて暮らしているあなたを心配しています。気をつけるだけでなく、具体的に何をすべきか私たちの経験を元にまとめました。</p>
-        <p>「やりすぎくらい」でもいいです。</p>
-        <p>また笑顔でみんなに会えることを願って、このサイトをあなたに届けます。</p>
+        <div>私たちは遠く離れて暮らしているあなたを心配しています。気をつけるだけでなく、具体的に何をすべきか私たちの経験を元にまとめました。</div>
+        <div>「やりすぎくらい」でもいいです。</div>
+        <div>また笑顔でみんなに会えることを願って、このサイトをあなたに届けます。</div>
       </div>
       <div class="p-col p-grid p-justify-center"><img src="../assets/bird.png" class="bird-image"></div>
       <div class="p-col">
-        <p>外出するとき、仕事に行くとき、人と会うとき。シチュエーションに合わせたコロナウイルスの予防をまとめましたので、普段の行動を振り返りながらチェックしてください。</p>
+        <div>外出するとき、仕事に行くとき、人と会うとき。シチュエーションに合わせたコロナウイルスの予防をまとめましたので、普段の行動を振り返りながらチェックしてください。</div>
       </div>
       <div class="p-col p-grid p-justify-center"><img src="../assets/divider.png" class="divider"></div>
-      <div class="p-col">
-        <h4>目次</h4>
+      <div class="p-col agenda">
+        <div>目次</div>
         <div class="agenda-list">
           <div *ngFor="let situation of situations"><fa-icon [icon]="faCaretRight"></fa-icon><a href="#{{ situation.id }}">{{ situation.header }}</a></div>
         </div>

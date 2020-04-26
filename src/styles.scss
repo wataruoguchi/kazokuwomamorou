@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
   color: #333333;
+  line-height: 1.875em;
 }
 
 img {
@@ -17,6 +18,7 @@ img {
   text-align: center;
   font-size: 1.25em;
   line-height: 2em;
+  margin-bottom: 60px;
 
   .copy-container {
     width: 80%;
@@ -36,6 +38,32 @@ img {
   }
 }
 
+.bird-image {
+  max-width: 60%;
+  margin-top: 92px;
+  margin-bottom: 92px;
+}
+
+.divider {
+  width: 40%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.agenda {
+  div {
+    line-height: 3em;
+  }
+
+  &-list {
+    padding-left: 30px;
+
+    fa-icon {
+      margin-right: 15px;
+    }
+  }
+}
+
 .full-justify {
   text-align:justify;
 
@@ -43,22 +71,5 @@ img {
     content: "";
     display: inline-block;
     width: 100%;
-  }
-}
-
-.bird-image {
-  max-width: 60%;
-}
-
-.divider {
-  width: 40%;
-}
-
-
-.agenda-list {
-  padding-left: 30px;
-
-  fa-icon {
-    margin-right: 10px;
   }
 }
