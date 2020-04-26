@@ -64,6 +64,39 @@ img {
   }
 }
 
+.situation-header {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.23em;
+  margin-bottom: 10px;
+}
+
+.tip {
+  margin-bottom: 80px;
+
+  &-image {
+    margin-bottom: 15px;
+  }
+
+  &-summary {
+    font-size: 1.25em;
+    line-height: 1.33em;
+    margin-bottom: 20px;
+  }
+}
+
+.ref-section {
+  margin-bottom: 20px;
+
+  &-header {
+    font-weight: 600;
+  }
+}
+
+.reference {
+  margin-top: 20px;
+}
+
 .full-justify {
   text-align:justify;
 
