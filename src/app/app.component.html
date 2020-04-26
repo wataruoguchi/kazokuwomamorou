@@ -23,7 +23,9 @@
         </div>
       </div>
       <div class="p-col p-grid p-justify-center"><img src="../assets/divider.png" class="divider"></div>
-      <div class="p-col">contents</div>
+      <div class="p-col">
+        <app-situation *ngFor="let situation of situations"></app-situation>
+      </div>
     </div>
   </div>
 </div>

@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { SituationComponent } from './situation/situation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SituationComponent
   ],
   imports: [
     BrowserModule,

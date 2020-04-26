@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+.main-bg-image {
+  max-width: 80%;
+}
+
+.bird-image {
+  max-width: 60%;
+}
+
+.divider {
+  width: 40%;
+}
+
+div {
+  font-family: sans-serif;
+  color: #333333;
+}
+
+.agenda-list {
+  padding-left: 30px;
+
+  fa-icon {
+    margin-right: 10px;
+  }
+}
