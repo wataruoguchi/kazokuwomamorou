@@ -1,4 +1,4 @@
-div {
+body {
   font-family: sans-serif;
   color: #333333;
 }
@@ -7,8 +7,43 @@ img {
   max-width: 100%;
 }
 
-.main-bg-image {
-  max-width: 80%;
+.content-container {
+  padding-top: 60px;
+}
+
+.top-copy {
+  max-width: 430px;
+  position: relative;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 2em;
+
+  .copy-container {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .main-phrase {
+      font-size: 2em;
+    }
+
+    .sub-phrase {
+      letter-spacing: 0.2em;
+      margin-right: -0.2em;
+    }
+  }
+}
+
+.full-justify {
+  text-align:justify;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
 }
 
 .bird-image {
