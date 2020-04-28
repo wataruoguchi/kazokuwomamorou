@@ -1,6 +1,6 @@
 <div [id]="id" class="situation-header">{{ header }}</div>
 <div class="tip" *ngFor="let tip of tips; index as i">
-  <img class="tip-image" src="{{ tip.imageSource }}">
+  <img class="tip-image" [src]="tip.imageSource">
   <div class="tip-summary">
     <span *ngIf="hasMultipleTips">{{ i + 1 }}. </span>
     {{ tip.summary }}

@@ -22,7 +22,7 @@ export const tipsData: situation[] = [
     header: '買い物に行く',
     tips: [
       {
-        imageSource: '../../assets/tips-image/shopping-1.png',
+        imageSource: 'assets/tips-image/shopping-1.png',
         summary: '一度の買い物でまとめて買う',
         descriptionLines: [
           'スーパーや薬局へ買い物へ行く際は、一度に一週間分を目処にまとめて買いましょう。',
@@ -31,14 +31,14 @@ export const tipsData: situation[] = [
         ]
       },
       {
-        imageSource: '../../assets/tips-image/shopping-3.png',
+        imageSource: 'assets/tips-image/shopping-3.png',
         summary: '他人とは2メートルの間隔を保つ',
         descriptionLines: [
           '店内は人が密集しがちな場所です。他人と最低でも1メートル、可能であれば2メートルの距離を空けましょう。'
         ]
       },
       {
-        imageSource: '../../assets/tips-image/shopping-4.png',
+        imageSource: 'assets/tips-image/shopping-4.png',
         summary: '電子マネーやおサイフケータイを活用する',
         descriptionLines: [
           'レジでは、現金よりもクレジットカードや電子マネー、おサイフケータイなどを使用した方が感染のリスクを下げることができます。',
@@ -46,7 +46,7 @@ export const tipsData: situation[] = [
         ]
       },
       {
-        imageSource: '../../assets/tips-image/shopping-2.png',
+        imageSource: 'assets/tips-image/shopping-2.png',
         summary: '顔を触らない、マスクを付ける',
         descriptionLines: [
           '店内では、ドアや買い物カゴなど、他の人が触ったものに触れる機会が増えます。',
@@ -74,7 +74,7 @@ export const tipsData: situation[] = [
     header: '高齢の家族に会う',
     tips: [
       {
-        imageSource: '../../assets/tips-image/elderly-1.png',
+        imageSource: 'assets/tips-image/elderly-1.png',
         summary: 'こまめに連絡を取り合う',
         descriptionLines: [
           '同居でない場合「家族だから」といって安心して会うことはできません。',
@@ -82,7 +82,7 @@ export const tipsData: situation[] = [
         ]
       },
       {
-        imageSource: '../../assets/tips-image/elderly-2.png',
+        imageSource: 'assets/tips-image/elderly-2.png',
         summary: '困った時は助けを呼ぶよう伝える',
         descriptionLines: [
           '妊婦の方や高齢の方は免疫力が低いです。まずは会わないことが一番ですが、やむを得ない場合もあるかもしれません。',
@@ -90,7 +90,7 @@ export const tipsData: situation[] = [
         ]
       },
       {
-        imageSource: '../../assets/tips-image/elderly-3.png',
+        imageSource: 'assets/tips-image/elderly-3.png',
         summary: '外で何かに触れたら、まず手洗いを',
         descriptionLines: [
           '手で触れたものが感染源となる場合もあります。',
@@ -98,7 +98,7 @@ export const tipsData: situation[] = [
         ]
       },
       {
-        imageSource: '../../assets/tips-image/elderly-4.png',
+        imageSource: 'assets/tips-image/elderly-4.png',
         summary: '他人とは2メートルの間隔を保つ',
         descriptionLines: [
           'くしゃみや咳により感染する場合もあります。いつ誰が咳をするか分かりません。',
@@ -122,7 +122,7 @@ export const tipsData: situation[] = [
     header: 'ストレスを抱える前に',
     tips: [
       {
-        imageSource: '../../assets/tips-image/stress-care-1.png',
+        imageSource: 'assets/tips-image/stress-care-1.png',
         summary: '情報から目を離す',
         descriptionLines: [
           'テレビ番組では毎日のように新型コロナウイルスについて報道されています。',
@@ -131,7 +131,7 @@ export const tipsData: situation[] = [
         ]
       },
       {
-        imageSource: '../../assets/tips-image/stress-care-2.png',
+        imageSource: 'assets/tips-image/stress-care-2.png',
         summary: '連絡を取り合うこと、心のつながり',
         descriptionLines: [
           '家族に会えないからこそ、いつもより連絡を取り合い、助け合うことが心の健康につながります。',
@@ -139,7 +139,7 @@ export const tipsData: situation[] = [
         ]
       },
       {
-        imageSource: '../../assets/tips-image/stress-care-3.png',
+        imageSource: 'assets/tips-image/stress-care-3.png',
         summary: '適度な運動で気分転換をする',
         descriptionLines: ['早朝は人混みを避けることができる時間帯です。一人、または同居している家族と一緒にウォーキングをするなど、身体を動かしましょう。']
       }
@@ -160,7 +160,7 @@ export const tipsData: situation[] = [
     header: '仕事に行く',
     tips: [
       {
-        imageSource: '../../assets/tips-image/office-1.png',
+        imageSource: 'assets/tips-image/office-1.png',
         summary: '【仕事に行く前】体調チェック',
         descriptionLines: [
           '毎朝、自分の体調チェックをして、何か症状があれば会社に連絡をしましょう。',
@@ -169,7 +169,7 @@ export const tipsData: situation[] = [
         ]
       },
       {
-        imageSource: '../../assets/tips-image/office-2.png',
+        imageSource: 'assets/tips-image/office-2.png',
         summary: '【仕事中】気をつけること',
         descriptionLines: [
           'マスクをつけること以外にも、感染を防ぐためにできることがあります。',
@@ -180,7 +180,7 @@ export const tipsData: situation[] = [
         ]
       },
       {
-        imageSource: '../../assets/tips-image/office-3.png',
+        imageSource: 'assets/tips-image/office-3.png',
         summary: '【仕事後】飲み会は控える',
         descriptionLines: [
           '飲み会など大人数の集まりは控えましょう。無症状でも陽性の可能性があります。',
@@ -200,12 +200,12 @@ export const tipsData: situation[] = [
     header: '車・電車を使う',
     tips: [
       {
-        imageSource: '../../assets/tips-image/transportation-1.png',
+        imageSource: 'assets/tips-image/transportation-1.png',
         summary: '他人とは2メートルの間隔を保つ',
         descriptionLines: ['公共交通機関はなるべく利用しないでください。利用を必要とする場合は、飛沫感染を防ぐためにも他人と最低でも1メートル、可能であれば2メートルの距離を空けましょう。']
       },
       {
-        imageSource: '../../assets/tips-image/transportation-2.png',
+        imageSource: 'assets/tips-image/transportation-2.png',
         summary: '車の乗り合わせを避ける',
         descriptionLines: [
           '自家用車内は密閉空間であり、密接場面でもあります。',
@@ -213,7 +213,7 @@ export const tipsData: situation[] = [
         ]
       },
       {
-        imageSource: '../../assets/tips-image/transportation-3.png',
+        imageSource: 'assets/tips-image/transportation-3.png',
         summary: '車のカギ、ドア、ハンドルの消毒',
         descriptionLines: [
           '見落としがちですが、車のカギ、ドア、ハンドルは、携帯電話と同様によく触れるものです。こまめに消毒しましょう。'
@@ -240,7 +240,7 @@ export const tipsData: situation[] = [
     header: '最後に',
     tips: [
       {
-        imageSource: '../../assets/tips-image/when-you-feel-sick.png',
+        imageSource: 'assets/tips-image/when-you-feel-sick.png',
         summary: '体調に異変を感じたら、まず連絡を',
         descriptionLines: [
           '新型コロナウイルスに対応した地域の医療機関の連絡先は事前に調べ、見えるところに控えておきましょう。熱や咳、または呼吸が難しいと感じたら、まずは電話で相談しましょう。',
