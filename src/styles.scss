@@ -97,6 +97,11 @@ img {
 
 .reference {
   margin-top: 20px;
+
+  a {
+    max-width: 100%;
+    word-break: break-all;
+  }
 }
 
 .contact {
