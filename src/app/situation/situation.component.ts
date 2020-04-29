@@ -5,7 +5,7 @@ import {reference, situation, tip} from './tips-data';
   selector: 'app-situation',
   templateUrl: './situation.component.html',
 })
-export class SituationComponent implements OnInit {
+export class SituationComponent {
   id: string;
   header: string;
   tips: tip[];
@@ -22,8 +22,5 @@ export class SituationComponent implements OnInit {
   }
 
   constructor() {
-  }
-
-  ngOnInit(): void {
   }
 }

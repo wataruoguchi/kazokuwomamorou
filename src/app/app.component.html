@@ -60,15 +60,15 @@
     <div class="p-col p-grid">
       <a class="p-col sns-share-container sns-line p-grid p-justify-center p-align-center" [href]="lineShareLink" target="_blank">
         <img src="assets/sns-icon/line.png">
-        <span>シェアする</span>
+        <span *ngIf="!isWidthSmall">シェアする</span>
       </a>
       <a class="p-col sns-share-container sns-fb p-grid p-justify-center p-align-center" [href]="fbShareLink" target="_blank">
         <img src="assets/sns-icon/facebook.png">
-        <span>シェアする</span>
+        <span *ngIf="!isWidthSmall">シェアする</span>
       </a>
       <a class="p-col sns-share-container sns-twitter p-grid p-justify-center p-align-center" [href]="twitterShareLink" target="_blank">
         <img src="assets/sns-icon/twitter.png">
-        <span>ツイートする</span>
+        <span *ngIf="!isWidthSmall">ツイートする</span>
       </a>
     </div>
     <div class="p-col p-col-align-center copy-right">©2020 Make 2020 Better</div>
