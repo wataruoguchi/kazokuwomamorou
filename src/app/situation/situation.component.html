@@ -5,7 +5,7 @@
     <span *ngIf="hasMultipleTips">{{ i + 1 }}. </span>
     {{ tip.summary }}
   </div>
-  <div *ngFor="let line of tip.descriptionLines">{{ line }}</div>
+  <div *ngFor="let line of tip.descriptionLines" [innerHTML]="line"></div>
 </div>
 <div class="ref-section">
   <div class="ref-section-header">参考情報</div>
