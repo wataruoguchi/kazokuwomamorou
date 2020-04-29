@@ -1,5 +1,5 @@
 <div class="p-grid p-justify-center content-container">
-  <div class="p-xl-6 p-md-8 p-sm-10 p-col-12 p-grid p-dir-col">
+  <div class="p-xl-6 p-md-8 p-sm-10 p-col-12 p-grid p-dir-col side-pad-0">
     <div class="p-col p-col-align-center top-copy">
       <img src="assets/main_background.png">
       <div class="p-col p-col-align-center copy-container">
@@ -36,14 +36,14 @@
 
     <div class="p-col p-grid p-justify-center"><img src="assets/divider.png" class="divider"></div>
 
-    <div class="p-col" *ngFor="let situation of situations">
+    <div class="p-col side-pad-0" *ngFor="let situation of situations">
       <app-situation [situationBlock]=situation></app-situation>
       <div class="p-col p-grid p-justify-center"><img src="assets/divider.png" class="divider"></div>
     </div>
 
     <div class="p-col p-col-align-center"><a href="#agenda">目次へ戻る</a></div>
 
-    <div class="p-col contact">
+    <div class="p-col contact side-pad-0">
       <div class="tip-summary">問い合わせ</div>
       <div>本記事についてのご意見やご指摘などは、こちらの
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScJRdbeNvqa6wPQDlThwD9LoNMB8WfXBjLer2kWhRpPRqJuDQ/viewform?usp=sf_link">
@@ -57,10 +57,19 @@
 <div class="p-grid p-justify-center footer">
   <div class="p-xl-6 p-md-8 p-sm-10 p-col-12 p-grid p-dir-col">
     <div class="p-col p-col-align-center share-page">この記事をシェアする</div>
-    <div class="p-col p-grid ">
-      <div class="p-col sns-share">シェアする</div>
-      <div class="p-col sns-share">シェアする</div>
-      <div class="p-col sns-share">ツイートする</div>
+    <div class="p-col p-grid">
+      <a class="p-col sns-share-container sns-line p-grid p-justify-center p-align-center" [href]="lineShareLink" target="_blank">
+        <img src="assets/sns-icon/line.png">
+        <span>シェアする</span>
+      </a>
+      <a class="p-col sns-share-container sns-fb p-grid p-justify-center p-align-center" [href]="fbShareLink" target="_blank">
+        <img src="assets/sns-icon/facebook.png">
+        <span>シェアする</span>
+      </a>
+      <a class="p-col sns-share-container sns-twitter p-grid p-justify-center p-align-center" [href]="twitterShareLink" target="_blank">
+        <img src="assets/sns-icon/twitter.png">
+        <span>ツイートする</span>
+      </a>
     </div>
     <div class="p-col p-col-align-center copy-right">©2020 Make 2020 Better</div>
   </div>
