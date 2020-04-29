@@ -21,6 +21,9 @@ export class SituationComponent {
     this.hasMultipleTips = situationBlock.tips.length > 1;
   }
 
+  @Input()
+  isWidthSmall: boolean;
+
   constructor() {
   }
 }

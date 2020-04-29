@@ -1,4 +1,4 @@
-<div [id]="id" class="situation-header">{{ header }}</div>
+<div [id]="id" class="situation-header" [ngClass]="{'text-center': isWidthSmall}">{{ header }}</div>
 <div class="tip" *ngFor="let tip of tips; index as i">
   <img class="tip-image" [src]="tip.imageSource">
   <div class="tip-summary">
@@ -11,6 +11,6 @@
   <div class="ref-section-header">参考情報</div>
   <div class="reference" *ngFor="let ref of references">
     <div>{{ ref.title }}</div>
-    <a [href]="ref.url">{{ ref.url }}</a>
+    <a [href]="ref.url" target="_blank">{{ ref.url }}</a>
   </div>
 </div>

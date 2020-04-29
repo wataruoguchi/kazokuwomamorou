@@ -37,7 +37,7 @@
     <div class="p-col p-grid p-justify-center"><img src="assets/divider.png" class="divider"></div>
 
     <div class="p-col side-pad-0" *ngFor="let situation of situations">
-      <app-situation [situationBlock]=situation></app-situation>
+      <app-situation [situationBlock]=situation [isWidthSmall]="isWidthSmall"></app-situation>
       <div class="p-col p-grid p-justify-center"><img src="assets/divider.png" class="divider"></div>
     </div>
 
@@ -46,7 +46,7 @@
     <div class="p-col contact side-pad-0">
       <div class="tip-summary">問い合わせ</div>
       <div>本記事についてのご意見やご指摘などは、こちらの
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJRdbeNvqa6wPQDlThwD9LoNMB8WfXBjLer2kWhRpPRqJuDQ/viewform?usp=sf_link">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJRdbeNvqa6wPQDlThwD9LoNMB8WfXBjLer2kWhRpPRqJuDQ/viewform?usp=sf_link" target="_blank">
           お問い合わせフォーム
         </a>
         よりお問い合わせください。
@@ -56,7 +56,7 @@
 </div>
 <div class="p-grid p-justify-center footer">
   <div class="p-xl-6 p-md-8 p-sm-10 p-col-12 p-grid p-dir-col">
-    <div class="p-col p-col-align-center share-page">この記事をシェアする</div>
+    <div class="p-col p-col-align-center share-page">このページをシェアする</div>
     <div class="p-col p-grid">
       <a class="p-col sns-share-container sns-line p-grid p-justify-center p-align-center" [href]="lineShareLink" target="_blank">
         <img src="assets/sns-icon/line.png">
