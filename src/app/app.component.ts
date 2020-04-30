@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import {faCaretRight} from '@fortawesome/free-solid-svg-icons';
-import {tipsData} from './situation/tips-data';
+import { Component, OnInit } from '@angular/core';
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { tipsData } from './situation/tips-data';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -20,9 +21,22 @@ export class AppComponent implements OnInit {
 
   isWidthSmall = false;
 
+  constructor(private metaService: Meta) {
+  }
+
   ngOnInit(): void {
     if (window.screen.width <= 430) {
       this.isWidthSmall = true;
     }
+
+    this.metaService.addTags([
+      {name: 'og:site_name', content: '家族を守ろう'},
+      {name: 'og:type', content: 'website'},
+      {name: 'og:url', content: 'https://make-2020-better.github.io/kazokuwomamorou/'},
+      {name: 'og:title', content: '家族を守ろう'},
+      {name: 'og:description', content: '今を安全に過ごし、日常を早く取り戻すためにできることを状況別にまとめました。'},
+      {name: 'og:image', content: 'ogp.png'},
+      {name: 'twitter:card', content: 'summary_large_image'}
+    ]);
   }
 }
