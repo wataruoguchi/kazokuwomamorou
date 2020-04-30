@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { SituationComponent } from './situation/situation.component';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { SituationComponent } from './situation/situation.component';
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ScrollToModule.forRoot()
   ],
   providers: [Meta],
   bootstrap: [AppComponent]
