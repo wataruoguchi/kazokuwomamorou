@@ -25,7 +25,6 @@ img {
   max-width: 430px;
   position: relative;
   text-align: center;
-  font-size: 1.25em;
   line-height: 2em;
   margin-bottom: 60px;
 
@@ -41,8 +40,19 @@ img {
     }
 
     .sub-phrase {
+      font-size: 1.2em;
       letter-spacing: 0.2em;
       margin-right: -0.2em;
+    }
+
+    &.small-width {
+      .main-phrase {
+        font-size: 8vw;
+      }
+
+      .sub-phrase {
+        font-size: 4.4vw;
+      }
     }
   }
 }

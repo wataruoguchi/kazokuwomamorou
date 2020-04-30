@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   isWidthSmall = false;
 
   ngOnInit(): void {
-    if (window.screen.width <= 415) {
+    if (window.screen.width <= 430) {
       this.isWidthSmall = true;
     }
   }
