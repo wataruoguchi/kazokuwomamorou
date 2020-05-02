@@ -65,7 +65,7 @@ export const tipsData: situation[] = [
         url: 'https://www.jiji.com/jc/article?k=2020041000680&g=int'
       },
       {
-        title: 'Coronavirus disease (COVID-19) advice for the public',
+        title: 'Coronavirus disease (COVID-19) advice for the public (英語)',
         url: 'https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public'
       }
     ]
@@ -114,7 +114,7 @@ export const tipsData: situation[] = [
         url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/yobou/index_00013.html'
       },
       {
-        title: 'Coronavirus disease (COVID-19) advice for the public',
+        title: 'Coronavirus disease (COVID-19) advice for the public (英語)',
         url: 'https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public'
       }
     ]
@@ -154,7 +154,7 @@ export const tipsData: situation[] = [
         url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/yobou/index_00013.html'
       },
       {
-        title: 'Mental health and psychosocial considerations during the COVID-19 outbreak',
+        title: 'Mental health and psychosocial considerations during the COVID-19 outbreak (英語)',
         url: 'https://www.who.int/docs/default-source/coronaviruse/mental-health-considerations.pdf'
       }
     ]
@@ -237,7 +237,7 @@ export const tipsData: situation[] = [
         url: 'http://www.iarmm.org/J/newsletters/Covid-19_recommendation.pdft'
       },
       {
-        title: 'Coronavirus disease (COVID-19) advice for the public',
+        title: 'Coronavirus disease (COVID-19) advice for the public (英語)',
         url: 'https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public'
       }
     ]
@@ -257,7 +257,7 @@ export const tipsData: situation[] = [
     ],
     references: [
       {
-        title: 'Coronavirus disease (COVID-19) advice for the public',
+        title: 'Coronavirus disease (COVID-19) advice for the public (英語)',
         url: 'https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public'
       },
     ]
