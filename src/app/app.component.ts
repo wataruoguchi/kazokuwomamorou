@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
       {name: 'og:url', content: 'http://家族を守ろう.com'},
       {name: 'og:title', content: '家族を守ろう'},
       {name: 'og:description', content: '今を安全に過ごし、日常を早く取り戻すためにできることを状況別にまとめました。'},
-      {name: 'og:image', content: 'ogp.png'},
+      {name: 'og:image', content: 'https://kazoku-wo-mamorou.com/assets/ogp.png'},
       {name: 'twitter:card', content: 'summary_large_image'}
     ]);
   }
