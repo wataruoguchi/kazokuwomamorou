@@ -8,7 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "cp:CNAME": "cp ./{src,dist/kazokuwomamorou}/CNAME"
+    "cp:CNAME": "cp ./{src,dist/kazokuwomamorou}/CNAME",
+    "build:gh-pages": "yarn build:prod && yarn cli:gh-pages",
+    "build:prod": "ng build --prod --base-href \"https://kazoku-wo-mamorou.com/\"",
+    "cli:gh-pages": "yarn angular-cli-ghpages --dir=\"dist/kazokuwomamorou\""
   },
   "private": true,
   "dependencies": {
@@ -39,6 +42,7 @@
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^0.6.2",
     "codelyzer": "^5.1.2",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
