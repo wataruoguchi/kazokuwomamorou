@@ -28,7 +28,7 @@
       <div class="agenda-list">
         <ng-container *ngFor="let situation of situations; last as isLast">
           <div *ngIf="!isLast">
-            <fa-icon [icon]="faCaretRight"></fa-icon><a href="#" [ngxScrollTo]="situation.id">{{ situation.header }}</a>
+            <fa-icon [icon]="faCaretRight"></fa-icon><a href="#" [ngxScrollTo]="situation.id" (click)="sendClickEvent(situation.id)">{{ situation.header }}</a>
           </div>
         </ng-container>
       </div>

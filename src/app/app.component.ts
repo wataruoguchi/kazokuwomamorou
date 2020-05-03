@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
-import { tipsData } from './situation/tips-data';
+import { tipsData } from './components/situation/tips-data';
 import { Meta } from '@angular/platform-browser';
+import { GoogleAnalyticsService } from './services/google-analytics.service';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,7 @@ export class AppComponent implements OnInit {
 
   isWidthSmall = false;
 
-  constructor(private metaService: Meta) {
+  constructor(private metaService: Meta, public googleAnalyticsService: GoogleAnalyticsService) {
   }
 
   ngOnInit(): void {
@@ -38,5 +39,9 @@ export class AppComponent implements OnInit {
       {name: 'og:image', content: 'https://kazoku-wo-mamorou.com/assets/ogp.png'},
       {name: 'twitter:card', content: 'summary_large_image'}
     ]);
+  }
+
+  sendClickEvent(situationId: string) {
+    this.googleAnalyticsService.eventEmitter('page-link', situationId);
   }
 }
