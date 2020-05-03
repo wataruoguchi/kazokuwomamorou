@@ -11,7 +11,7 @@
     "cp:CNAME": "cp ./{src,dist/kazokuwomamorou}/CNAME",
     "build:gh-pages": "yarn build:prod && yarn cp:CNAME && yarn cli:gh-pages",
     "build:prod": "ng build --prod --base-href \"https://kazoku-wo-mamorou.com/\"",
-    "cli:gh-pages": "yarn angular-cli-ghpages --dir=\"dist/kazokuwomamorou\""
+    "cli:gh-pages": "angular-cli-ghpages --dir=\"dist/kazokuwomamorou\""
   },
   "private": true,
   "dependencies": {
