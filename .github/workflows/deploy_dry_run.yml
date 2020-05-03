@@ -9,8 +9,5 @@ jobs:
       - uses: actions/checkout@v2
 
       - run: |
-          git config --local user.email "kazokuwomamorou@gmail.com"
-          git config --local user.name "Deploy Bot"
-          npm run onboard
           yarn
           yarn build:gh-pages --name="Deploy Bot" --email=kazokuwomamorou@gmail.com --dry-run
