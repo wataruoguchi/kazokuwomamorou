@@ -9,6 +9,6 @@ jobs:
       - uses: actions/checkout@v2
 
       - run: |
-          yarn onboard
+          sudo yarn onboard
           yarn
           yarn build:gh-pages --name="Deploy Bot" --email=kazokuwomamorou@gmail.com --dry-run
