@@ -46,7 +46,7 @@
     <div class="p-col contact side-pad-0">
       <div class="tip-summary">問い合わせ</div>
       <div>本記事についてのご意見やご指摘などは、こちらの
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJRdbeNvqa6wPQDlThwD9LoNMB8WfXBjLer2kWhRpPRqJuDQ/viewform?usp=sf_link" target="_blank" onClick="ga('send','event','pc','click','feedback');">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJRdbeNvqa6wPQDlThwD9LoNMB8WfXBjLer2kWhRpPRqJuDQ/viewform?usp=sf_link" target="_blank" onClick="gtag('event', 'click', {'event_category':'link', 'event_label':'feedback'});">
           フォーム
         </a>
         よりお問い合わせください。
@@ -58,15 +58,15 @@
   <div class="p-xl-6 p-md-8 p-sm-10 p-col-12 p-grid p-dir-col">
     <div class="p-col p-col-align-center share-page">このページをシェアする</div>
     <div class="p-col p-grid">
-      <a class="p-col sns-share-container sns-line p-grid p-justify-center p-align-center" [href]="lineShareLink" target="_blank" onClick="ga('send','event','pc','click','share-line');">
+      <a class="p-col sns-share-container sns-line p-grid p-justify-center p-align-center" [href]="lineShareLink" target="_blank" onClick="gtag('event', 'share', { method : 'share-line' });">
         <img src="assets/sns-icon/line.png">
         <span *ngIf="!isWidthSmall">シェアする</span>
       </a>
-      <a class="p-col sns-share-container sns-fb p-grid p-justify-center p-align-center" [href]="fbShareLink" target="_blank" onClick="ga('send','event','pc','click','share-fb');">
+      <a class="p-col sns-share-container sns-fb p-grid p-justify-center p-align-center" [href]="fbShareLink" target="_blank" onClick="gtag('event', 'share', { method : 'share-fb' });">
         <img src="assets/sns-icon/facebook.png">
         <span *ngIf="!isWidthSmall">シェアする</span>
       </a>
-      <a class="p-col sns-share-container sns-twitter p-grid p-justify-center p-align-center" [href]="twitterShareLink" target="_blank" onClick="ga('send','event','pc','click','share-tw');">
+      <a class="p-col sns-share-container sns-twitter p-grid p-justify-center p-align-center" [href]="twitterShareLink" target="_blank" onClick="gtag('event', 'share', { method : 'share-tw' });">
         <img src="assets/sns-icon/twitter.png">
         <span *ngIf="!isWidthSmall">ツイートする</span>
       </a>
