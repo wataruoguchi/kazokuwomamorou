@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "cp:CNAME": "cp ./{src,dist/kazokuwomamorou}/CNAME",
+    "cp:CNAME": "cp ./src/CNAME dist/kazokuwomamorou/CNAME",
     "build:gh-pages": "yarn build:prod && yarn cp:CNAME && yarn cli:gh-pages",
     "build:prod": "ng build --prod --base-href \"https://kazoku-wo-mamorou.com/\"",
     "cli:gh-pages": "angular-cli-ghpages --dir=\"dist/kazokuwomamorou\""
