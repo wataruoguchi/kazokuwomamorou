@@ -1,0 +1,16 @@
+name: Auto deploy the Angular App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+      - uses: actions/checkout@v2
+
+      - run: npm run onboard
+      - run: yarn build:gh-pages
