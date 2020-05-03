@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { SituationComponent } from './situation/situation.component';
+import { SituationComponent } from './components/situation/situation.component';
+import { GoogleAnalyticsService } from './services/google-analytics.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { SituationComponent } from './situation/situation.component';
     FontAwesomeModule,
     ScrollToModule.forRoot()
   ],
-  providers: [Meta],
+  providers: [Meta, GoogleAnalyticsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
