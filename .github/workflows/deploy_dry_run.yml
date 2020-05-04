@@ -9,6 +9,8 @@ jobs:
       - uses: actions/checkout@v2
 
       - run: |
+          git config --global user.email "kazokuwomamorou@gmail.com"
+          git config --global user.name "Deploy Bot"
           sudo yarn onboard
           yarn
-          yarn build:gh-pages --name="Deploy Bot" --email=kazokuwomamorou@gmail.com --dry-run
+          sudo yarn build:gh-pages --name="Deploy Bot" --email=kazokuwomamorou@gmail.com --dry-run
