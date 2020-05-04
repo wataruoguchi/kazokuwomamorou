@@ -9,21 +9,21 @@
       </div>
     </div>
 
-    <div class="p-col">
+    <div class="p-col side-pad-0">
       <div>私たちは遠く離れて暮らしているあなたを心配しています。あなたがあなた自身を、そして周りの人たちを守れるよう、具体的に何をすべきかを状況別にまとめました。</div>
       <div>「やりすぎるくらい」でもいいです。</div>
       <div>また笑顔でみんなに会えることを願って、このサイトをあなたに届けます。</div>
     </div>
 
-    <div class="p-col p-grid p-justify-center"><img src="assets/bird.png" class="bird-image"></div>
+    <div class="p-col p-grid p-justify-center side-pad-0"><img src="assets/bird.png" class="bird-image"></div>
 
-    <div class="p-col">
+    <div class="p-col side-pad-0">
       <div>外出するとき、仕事に行くとき、人と会うとき。シチュエーションに合わせたコロナウイルスの予防をまとめましたので、普段の行動を振り返りながらチェックしてください。</div>
     </div>
 
-    <div class="p-col p-grid p-justify-center"><img src="assets/divider.png" class="divider"></div>
+    <div class="p-col p-grid p-justify-center side-pad-0"><img src="assets/divider.png" class="divider"></div>
 
-    <div id="agenda" class="p-col agenda">
+    <div id="agenda" class="p-col agenda side-pad-0">
       <div>目次</div>
       <div class="agenda-list">
         <ng-container *ngFor="let situation of situations; last as isLast">
@@ -34,14 +34,14 @@
       </div>
     </div>
 
-    <div class="p-col p-grid p-justify-center"><img src="assets/divider.png" class="divider"></div>
+    <div class="p-col p-grid p-justify-center side-pad-0"><img src="assets/divider.png" class="divider"></div>
 
     <div class="p-col side-pad-0" *ngFor="let situation of situations">
       <app-situation [situationBlock]=situation [isWidthSmall]="isWidthSmall"></app-situation>
       <div class="p-col p-grid p-justify-center"><img src="assets/divider.png" class="divider"></div>
     </div>
 
-    <div class="p-col p-col-align-center"><a href="#" [ngxScrollTo]="'agenda'">目次へ戻る</a></div>
+    <div class="p-col p-col-align-center side-pad-0"><a href="#" [ngxScrollTo]="'agenda'">目次へ戻る</a></div>
 
     <div class="p-col contact side-pad-0">
       <div class="tip-summary">問い合わせ</div>
