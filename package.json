@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
     "build:gh-pages": "yarn build:prod && yarn cli:gh-pages",
     "build:prod": "ng build --prod --base-href \"https://kazoku-wo-mamorou.com/\"",
-    "cli:gh-pages": "angular-cli-ghpages --dir=\"dist/kazokuwomamorou\" --cname=kazoku-wo-mamorou.com"
+    "cli:gh-pages": "angular-cli-ghpages --dir=\"dist/kazokuwomamorou\" --cname=kazoku-wo-mamorou.com --no-silent"
   },
   "private": true,
   "dependencies": {
