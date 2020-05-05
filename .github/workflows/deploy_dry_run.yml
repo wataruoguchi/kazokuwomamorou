@@ -1,4 +1,4 @@
-name: dry-run: Auto deploy the Angular App to GitHub Pages
+name: (dry-run) Auto deploy the Angular App to GitHub Pages
 
 on: push
 
