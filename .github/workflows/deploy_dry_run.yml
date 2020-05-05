@@ -6,9 +6,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
       - uses: actions/checkout@v2
 
-      - run: |
+      - name: Build and deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
           sudo yarn onboard
           yarn
-          sudo yarn build:gh-pages --dry-run
+          sudo yarn build:gh-pages --name="Deploy Bot" --email="wataru.oguchi.0to1@gmail.com" --dry-run
