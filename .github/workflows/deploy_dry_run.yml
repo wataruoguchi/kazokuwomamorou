@@ -15,4 +15,4 @@ jobs:
         run: |
           sudo yarn onboard
           yarn
-          sudo yarn build:gh-pages --name="Deploy Bot" --email="wataru.oguchi.0to1@gmail.com" --dry-run
+          sudo yarn build:gh-pages --name="wataruoguchi" --email="wataru.oguchi.0to1@gmail.com" --dry-run
